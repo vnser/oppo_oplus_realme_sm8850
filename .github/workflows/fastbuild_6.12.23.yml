@@ -537,7 +537,7 @@ jobs:
           cd kernel_workspace
           git clone https://github.com/Numbersf/Action-Build.git --depth=1
           PATCH_DIR="${GITHUB_WORKSPACE}/kernel_workspace/Action-Build/patches"
-          cd kernel_workspace/common
+          cd common
           patch -p1 --forward < "${PATCH_DIR}/unicode_bypass_fix_6.1+.patch" || true
           
 
